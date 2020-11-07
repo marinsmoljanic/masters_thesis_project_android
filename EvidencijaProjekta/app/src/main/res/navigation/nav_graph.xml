@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <!--FIRST FRAGMENT-->
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.evidencijaprojekta.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_OsobaUrediFragment"
+            app:destination="@id/OsobaUrediFragment" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_ProjektUrediFragment"
+            app:destination="@id/ProjektUrediFragment" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_UlogaUrediFragment"
+            app:destination="@id/UlogaUrediFragment" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_UlogaOsobeUrediFragment"
+            app:destination="@id/UlogaOsobeUrediFragment" />
+    </fragment>
+    <!--FIRST FRAGMENT END-->
+
+
+
+    <!--OSOBA FRAGMENT-->
+    <fragment
+        android:id="@+id/OsobaFragment"
+        android:name="com.example.evidencijaprojekta.OsobaFragment"
+        android:label="@string/osoba_fragment_label"
+        tools:layout="@layout/fragment_osoba">
+
+        <action
+            android:id="@+id/action_OsobaFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/OsobaUrediFragment"
+        android:name="com.example.evidencijaprojekta.OsobaUrediFragment"
+        android:label="@string/osoba_uredi_fragment_label"
+        tools:layout="@layout/fragment_osoba_uredi">
+
+        <action
+            android:id="@+id/action_OsobaUrediFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+
+        <action
+            android:id="@+id/action_OsobaUrediFragment_to_OsobaFragment"
+            app:destination="@id/OsobaFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/OsobaAzurirajFragment"
+        android:name="com.example.evidencijaprojekta.OsobaAzurirajFragment"
+        android:label="@string/osoba_azuriraj_fragment_label"
+        tools:layout="@layout/fragment_osoba_azuriraj">
+
+        <action
+            android:id="@+id/action_OsobaAzurirajFragment_to_OsobaUrediFragment"
+            app:destination="@id/OsobaUrediFragment" />
+    </fragment>
+    <!--OSOBA FRAGMENT END-->
+
+
+
+
+
+
+    <!--PROJEKT FRAGMENT-->
+    <fragment
+        android:id="@+id/ProjektFragment"
+        android:name="com.example.evidencijaprojekta.ProjektFragment"
+        android:label="@string/projekt_fragment_label"
+        tools:layout="@layout/fragment_projekt">
+
+        <action
+            android:id="@+id/action_ProjektFragment_to_FirstFragment"
+            app:destination="@id/ProjektUrediFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ProjektUrediFragment"
+        android:name="com.example.evidencijaprojekta.ProjektUrediFragment"
+        android:label="@string/projekt_uredi_fragment_label"
+        tools:layout="@layout/fragment_projekt_uredi">
+
+        <action
+            android:id="@+id/action_ProjektUrediFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+
+        <action
+            android:id="@+id/action_ProjektUrediFragment_to_ProjektFragment"
+            app:destination="@id/ProjektFragment" />
+    </fragment>
+    <!--PROJEKT FRAGMENT END-->
+
+
+
+
+
+    <!--ULOGA FRAGMENT-->
+    <fragment
+        android:id="@+id/UlogaFragment"
+        android:name="com.example.evidencijaprojekta.UlogaFragment"
+        android:label="@string/uloga_fragment_label"
+        tools:layout="@layout/fragment_uloga">
+
+        <action
+            android:id="@+id/action_UlogaFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/UlogaUrediFragment"
+        android:name="com.example.evidencijaprojekta.UlogaUrediFragment"
+        android:label="@string/uloga_uredi_fragment_label"
+        tools:layout="@layout/fragment_uloga_uredi">
+
+        <action
+            android:id="@+id/action_UlogaUrediFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+
+        <action
+            android:id="@+id/action_UlogaUrediFragment_to_UlogaFragment"
+            app:destination="@id/UlogaFragment" />
+    </fragment>
+    <!--ULOGA FRAGMENT END-->
+
+
+
+    <!--ULOGA OSOBE FRAGMENT-->
+    <fragment
+        android:id="@+id/UlogaOsobeFragment"
+        android:name="com.example.evidencijaprojekta.UlogaOsobeFragment"
+        android:label="@string/ulogaosobe_fragment_label"
+        tools:layout="@layout/fragment_ulogaosobe">
+
+        <action
+            android:id="@+id/action_UlogaOsobeFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/UlogaOsobeUrediFragment"
+        android:name="com.example.evidencijaprojekta.UlogaOsobeUrediFragment"
+        android:label="@string/ulogaosobe_uredi_fragment_label"
+        tools:layout="@layout/fragment_uloga_uredi">
+
+        <action
+            android:id="@+id/action_UlogaOsobeUrediFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+
+        <action
+            android:id="@+id/action_UlogaOsobeUrediFragment_to_UlogaOsobeFragment"
+            app:destination="@id/UlogaOsobeFragment" />
+    </fragment>
+    <!--ULOGA FRAGMENT END-->
+
+
+
+</navigation>

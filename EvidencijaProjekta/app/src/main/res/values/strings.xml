@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">EvidencijaProjekta</string>
+    <string name="action_settings">Settings</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <!-- Strings used for OSOBA -->
+    <string name="osoba_fragment_label">Osoba Fragment</string>
+    <string name="osoba_uredi_fragment_label">Osoba Uredi Fragment</string>
+    <string name="osoba_azuriraj_fragment_label">Osoba Azuriraj Fragment</string>
+
+    <!-- Strings used for PROJEKT -->
+    <string name="projekt_fragment_label">Projekt Fragment</string>
+    <string name="projekt_uredi_fragment_label">Projekt Uredi Fragment</string>
+
+    <!-- Strings used for ULOGA -->
+    <string name="uloga_fragment_label">Uloga Fragment</string>
+    <string name="uloga_uredi_fragment_label">Uloga Uredi Fragment</string>
+
+    <!-- Strings used for ULOGA OSOBE -->
+    <string name="ulogaosobe_fragment_label">Uloga Osobe Fragment</string>
+    <string name="ulogaosobe_uredi_fragment_label">Uloga Osobe Uredi Fragment</string>
+
+    <string-array name="projekti">
+        <item>Puntijarka</item>
+        <item>Pleternica</item>
+        <item>Belevee</item>
+        <item>Spansko HDLU</item>
+    </string-array>
+
+
+    <string-array name="osobe">
+        <item>Klara Rusan</item>
+        <item>Marin Smoljanic</item>
+        <item>Alexander Sacha Stankov</item>
+        <item>Alka Vuica</item>
+    </string-array>
+
+
+    <string-array name="uloge">
+        <item>Arhitekt</item>
+        <item>Ilustrator</item>
+        <item>Razvojni inzenjer</item>
+        <item>Cistac</item>
+    </string-array>
+
+</resources>
