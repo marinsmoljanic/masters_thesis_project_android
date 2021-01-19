@@ -49,7 +49,6 @@ public class ListAdapter extends ArrayAdapter<String> {
             viewHolder.buttonUpdate= (Button) rowView.findViewById(R.id.btazu);
             viewHolder.buttonDelete= (Button) rowView.findViewById(R.id.bt);
             rowView.setTag(viewHolder);
-
         }
         // Set text to each TextView of ListView item
         ViewHolder holder = (ViewHolder) rowView.getTag();

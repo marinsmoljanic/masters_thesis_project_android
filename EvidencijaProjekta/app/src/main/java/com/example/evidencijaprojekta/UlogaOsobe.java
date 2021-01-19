@@ -41,6 +41,4 @@ public class UlogaOsobe {
     public void setDatDodjele(int DatDodjele) {
         this.DatDodjele = DatDodjele;
     }
-
-
 }

@@ -153,8 +153,8 @@ public class DbHandler extends SQLiteOpenHelper {
         String Create_Table = "CREATE TABLE " + TABLICA_PROJEKT_TMP + "(" + Col1Projekt + " INTEGER PRIMARY KEY AUTOINCREMENT,"
                 + Col2Projekt + " TEXT,"
                 + Col3Projekt + " TEXT,"
-                + Col4Projekt + " INTEGER,"
-                + Col5Projekt + " INTEGER "+ ")";
+                + Col4Projekt + " TEXT,"
+                + Col5Projekt + " TEXT "+ ")";
 
         db.execSQL(Create_Table);
     }
@@ -166,6 +166,7 @@ public class DbHandler extends SQLiteOpenHelper {
 
         // DATUME JE POTRENO PRETVORITI U INTEGER
         createTableProjekt(db);
+
         ContentValues cv=new ContentValues();
         cv.put(Col2Projekt, projekt.getNazProjekta());
         cv.put(Col3Projekt, projekt.getOpisProjekta());
